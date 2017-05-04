@@ -1,0 +1,4 @@
+C:\Users\vietd\Documents\Unity Projects\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\vietd\Documents\Unity Projects\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\vietd\Documents\Unity Projects\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\vietd\Documents\Unity Projects\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\App\Origami\Origami.csproj;x86

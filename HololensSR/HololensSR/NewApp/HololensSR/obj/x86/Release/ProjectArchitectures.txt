@@ -1,0 +1,4 @@
+D:\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\NewApp\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+D:\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\NewApp\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+D:\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\NewApp\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+D:\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\NewApp\HololensSR\HololensSR.csproj;x86

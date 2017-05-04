@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololensSR", "HololensSR\HololensSR.csproj", "{13A45C13-3265-47B8-BC48-A553B569DF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "D:\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\NewApp\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj", "{B093297D-506F-42E6-B61C-507984F13ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "D:\HolographicAcademy-Holograms-101\HolographicAcademy-Holograms-101\Origami\NewApp\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj", "{E7924234-3B2C-4447-B917-BFAC3D02FE07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Master|ARM = Master|ARM
+		Master|x64 = Master|x64
+		Master|x86 = Master|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|ARM.ActiveCfg = Debug|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|ARM.Build.0 = Debug|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|ARM.Deploy.0 = Debug|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x64.ActiveCfg = Debug|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x64.Build.0 = Debug|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x64.Deploy.0 = Debug|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x86.ActiveCfg = Debug|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x86.Build.0 = Debug|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Debug|x86.Deploy.0 = Debug|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|ARM.ActiveCfg = Master|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|ARM.Build.0 = Master|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|ARM.Deploy.0 = Master|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x64.ActiveCfg = Master|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x64.Build.0 = Master|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x64.Deploy.0 = Master|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x86.ActiveCfg = Master|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x86.Build.0 = Master|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Master|x86.Deploy.0 = Master|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|ARM.ActiveCfg = Release|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|ARM.Build.0 = Release|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|ARM.Deploy.0 = Release|ARM
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x64.ActiveCfg = Release|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x64.Build.0 = Release|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x64.Deploy.0 = Release|x64
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.ActiveCfg = Release|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Build.0 = Release|x86
+		{13A45C13-3265-47B8-BC48-A553B569DF55}.Release|x86.Deploy.0 = Release|x86
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Debug|ARM.Build.0 = Debug|ARM
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Debug|x64.ActiveCfg = Debug|x64
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Debug|x64.Build.0 = Debug|x64
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Debug|x86.ActiveCfg = Debug|x86
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Debug|x86.Build.0 = Debug|x86
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Master|ARM.ActiveCfg = Master|ARM
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Master|ARM.Build.0 = Master|ARM
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Master|x64.ActiveCfg = Master|x64
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Master|x64.Build.0 = Master|x64
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Master|x86.ActiveCfg = Master|x86
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Master|x86.Build.0 = Master|x86
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Release|ARM.ActiveCfg = Release|ARM
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Release|ARM.Build.0 = Release|ARM
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Release|x64.ActiveCfg = Release|x64
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Release|x64.Build.0 = Release|x64
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Release|x86.ActiveCfg = Release|x86
+		{B093297D-506F-42E6-B61C-507984F13ABD}.Release|x86.Build.0 = Release|x86
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Debug|ARM.Build.0 = Debug|ARM
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Debug|x64.ActiveCfg = Debug|x64
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Debug|x64.Build.0 = Debug|x64
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Debug|x86.ActiveCfg = Debug|x86
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Debug|x86.Build.0 = Debug|x86
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Master|ARM.ActiveCfg = Master|ARM
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Master|ARM.Build.0 = Master|ARM
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Master|x64.ActiveCfg = Master|x64
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Master|x64.Build.0 = Master|x64
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Master|x86.ActiveCfg = Master|x86
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Master|x86.Build.0 = Master|x86
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Release|ARM.ActiveCfg = Release|ARM
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Release|ARM.Build.0 = Release|ARM
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Release|x64.ActiveCfg = Release|x64
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Release|x64.Build.0 = Release|x64
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Release|x86.ActiveCfg = Release|x86
+		{E7924234-3B2C-4447-B917-BFAC3D02FE07}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
