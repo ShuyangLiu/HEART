@@ -7,3 +7,8 @@ Technology: Unity, Blender, Visual Studio(C#)
 
 Team Member: Viet-Duy Nguyen, Michael Parrish, Charlie Norvell, Longze Zhang, and Adam Struhl
 
+Our Website: https://sites.google.com/view/hololenssr/home
+
+Out Concept Video: https://www.youtube.com/watch?v=7f0t-tIAfDQ
+
+
