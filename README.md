@@ -1,14 +1,13 @@
 # HololensSR
-This is our final project for the Human Computer Interaction Class (CSC 212). We have used the augmented reality technology
-to improve the stroke rehabilitation. More specifically, we used Hololens to implement a virtual arm to reform the neuron 
-connection between brain and the disabled arm. 
-
-Technology: Unity, Blender, Visual Studio(C#)
-
-Team Member: Viet-Duy Nguyen, Michael Parrish, Charlie Norvell, Longze Zhang, and Adam Struhl
-
-Our Website: https://sites.google.com/view/hololenssr/home
-
-Out Concept Video: https://www.youtube.com/watch?v=7f0t-tIAfDQ
+Forked from https://github.com/Parrishoot/HololensSR.git
+----------------------
+#### Update (05/31/2017)
+----------------------
+- Add Named Pipe Server and Client for Inter-processes communication (IPC) so that it only use one socket for the whole process
+- Add Spike2 script for acquiring data from Power1401
+- TODO: 
+	- Construct socket connection from NPServer to Hololens
+	- Arm Control and reconsrtuction
+	- Data Analysis inside Spike2 Scripts
 
 
