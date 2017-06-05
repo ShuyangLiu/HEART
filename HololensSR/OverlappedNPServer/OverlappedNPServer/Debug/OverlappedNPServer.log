@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\liush\documents\visual studio 2015\projects\overlappednpserver\overlappednpserver\source.cpp(324): warning C4477: 'wprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HANDLE'
+  OverlappedNPServer.vcxproj -> c:\users\liush\documents\visual studio 2015\Projects\OverlappedNPServer\Debug\OverlappedNPServer.exe
+  OverlappedNPServer.vcxproj -> c:\users\liush\documents\visual studio 2015\Projects\OverlappedNPServer\Debug\OverlappedNPServer.pdb (Full PDB)

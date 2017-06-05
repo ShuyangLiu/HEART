@@ -1,5 +1,0 @@
-﻿  NPClient.cpp
-c:\users\liush\downloads\npclient\npclient\npclient.cpp(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-  NPClient.vcxproj -> C:\Users\liush\Downloads\NPClient\NPClient\.\Debug\NPClient.exe
-  NPClient.vcxproj -> .\Debug\NPClient.pdb (Full PDB)

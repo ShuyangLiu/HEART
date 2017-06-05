@@ -1,6 +1,0 @@
-﻿  NPServer.cpp
-c:\users\liush\downloads\npserver\npserver\npserver.cpp(144): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-c:\users\liush\downloads\npserver\npserver\npserver.cpp(40): warning C4101: 'server': unreferenced local variable
-  NPServer.vcxproj -> C:\Users\liush\Downloads\NPServer\NPServer\.\Debug\NPServer.exe
-  NPServer.vcxproj -> .\Debug\NPServer.pdb (Full PDB)
