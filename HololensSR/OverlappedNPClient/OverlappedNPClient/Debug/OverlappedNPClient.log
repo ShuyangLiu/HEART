@@ -1,5 +1,0 @@
-﻿  Source.cpp
-c:\users\liush\documents\visual studio 2015\projects\overlappednpclient\overlappednpclient\source.cpp(13): warning C4101: 'chBuf': unreferenced local variable
-c:\users\liush\documents\visual studio 2015\projects\overlappednpclient\overlappednpclient\source.cpp(15): warning C4101: 'cbRead': unreferenced local variable
-  OverlappedNPClient.vcxproj -> c:\users\liush\documents\visual studio 2015\Projects\OverlappedNPClient\Debug\OverlappedNPClient.exe
-  OverlappedNPClient.vcxproj -> c:\users\liush\documents\visual studio 2015\Projects\OverlappedNPClient\Debug\OverlappedNPClient.pdb (Full PDB)

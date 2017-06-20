@@ -1,8 +1,27 @@
+/*
+	This is a Overlapped Named Pipe Server
+	It also serves as a client for socket connection with Hololens at the same time
+	It receives data from NPClient (allow overlapping), and sends the data to Hololens via WinSock
+	Codes are derived from online tutorials of Microsoft official documentations
+*/
 
-#include <windows.h> 
+
+
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+
+#include <windows.h>
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <iphlpapi.h>
 #include <stdio.h>
 #include <tchar.h>
 #include <strsafe.h>
+
+#pragma comment(lib, "Ws2_32.lib")
+
+//Named Pipe Instance Structs and Global Variables
 
 #define CONNECTING_STATE 0 
 #define READING_STATE 1 
@@ -23,16 +42,96 @@ typedef struct
 	BOOL fPendingIO;
 } PIPEINST, *LPPIPEINST;
 
+PIPEINST Pipe[INSTANCES];
+HANDLE hEvents[INSTANCES];
+
+//WinSock 
+#define DEFAULT_PORT "27015" 
+WSADATA wsaData;
+SOCKET ConnectSocket = INVALID_SOCKET;
+int iResult;
+
+
+//Function Declarations
 
 VOID DisconnectAndReconnect(DWORD);
 BOOL ConnectToNewClient(HANDLE, LPOVERLAPPED);
 VOID GetAnswerToRequest(LPPIPEINST);
 
-PIPEINST Pipe[INSTANCES];
-HANDLE hEvents[INSTANCES];
 
-int _tmain(VOID)
+
+
+int _tmain(int argc, char *argv[])
 {
+	//Setting up WinSock Client for sending data to server (the server should be on Hololens)
+
+	// Initialize Winsock
+	// Call WSAStartup and return its value as an integer and check for errors.
+	iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
+	if (iResult != 0) {
+		printf("WSAStartup failed: %d\n", iResult);
+		return 1;
+	}
+
+	//Declare an addrinfo object that contains a sockaddr 
+	//structure and initialize these values
+	//addrinfo object is used to hold host address information
+	struct addrinfo *result = NULL,
+		*ptr = NULL,
+		hints;
+
+	ZeroMemory(&hints, sizeof(hints)); //Fills a block of memory with zeros.
+	hints.ai_family = AF_UNSPEC; // unspecifying the family so that we can use either ipv4 or ipv6
+	hints.ai_socktype = SOCK_STREAM;
+	hints.ai_protocol = IPPROTO_TCP;//using tcp 
+
+	// Resolve the server address and port
+	//Call the getaddrinfo function requesting the IP address for the server name at argv[1]
+	iResult = getaddrinfo("localhost", DEFAULT_PORT, &hints, &result);
+	if (iResult != 0) {
+		printf("getaddrinfo failed: %d\n", iResult);
+		WSACleanup();
+		return 1;
+	}
+
+	// Attempt to connect to the first address returned by
+	// the call to getaddrinfo
+	ptr = result;
+
+	// Create a SOCKET for connecting to server
+	ConnectSocket = socket(ptr->ai_family, ptr->ai_socktype, ptr->ai_protocol);
+
+	if (ConnectSocket == INVALID_SOCKET) {
+		printf("Error at socket(): %ld\n", WSAGetLastError());
+		freeaddrinfo(result);
+		WSACleanup();
+		return 1;
+	}
+
+	// Connect to server.
+	iResult = connect(ConnectSocket, ptr->ai_addr, (int)ptr->ai_addrlen);
+	if (iResult == SOCKET_ERROR) {
+		closesocket(ConnectSocket);
+		ConnectSocket = INVALID_SOCKET;
+	}
+
+	// Should really try the next address returned by getaddrinfo
+	// if the connect call failed
+	// But for this simple example we just free the resources
+	// returned by getaddrinfo and print an error message
+
+	freeaddrinfo(result);
+
+	if (ConnectSocket == INVALID_SOCKET) {
+		printf("Unable to connect to server!\n");
+		WSACleanup();
+		return 1;
+	}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//Named Pipe Server
+
 	DWORD i, dwWait, cbRet, dwErr;
 	BOOL fSuccess;
 	LPTSTR lpszPipename = TEXT("\\\\.\\pipe\\mynamedpipe");
@@ -247,6 +346,8 @@ int _tmain(VOID)
 		}
 	}
 
+	WSACleanup();
+
 	return 0;
 }
 
@@ -321,9 +422,20 @@ BOOL ConnectToNewClient(HANDLE hPipe, LPOVERLAPPED lpo)
 
 VOID GetAnswerToRequest(LPPIPEINST pipe)
 {
+	//Print out data received from NPClient
 	_tprintf(TEXT("[%d] %s\n"), pipe->hPipeInst, pipe->chRequest);
 	StringCchCopy(pipe->chReply, BUFSIZE, TEXT("Default answer from server"));
 	pipe->cbToWrite = (lstrlen(pipe->chReply) + 1) * sizeof(TCHAR);
-}
 
+
+	//Sending data via socket connection
+	TCHAR* data = pipe->chRequest;
+	iResult = send(ConnectSocket, (char*)data, (int)strlen((char*)data), 0);
+	if (iResult == SOCKET_ERROR) {
+		printf("send failed: %d\n", WSAGetLastError());
+		closesocket(ConnectSocket);
+		return;
+	}
+
+}
 
