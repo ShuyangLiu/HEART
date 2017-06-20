@@ -6,7 +6,7 @@ from subprocess import call
 
 def callingClient(num):
 	while 1:
-		call ([".\\OverlappedNPClient\\Debug\\OverlappedNPClient.exe", num])
+		call (["..\\OverlappedNPClient\\Debug\\OverlappedNPClient.exe", num])
 
 
 for x in range(1,10):
