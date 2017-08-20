@@ -1,6 +1,4 @@
-# HololensSR
-
-Forked from https://github.com/Parrishoot/HololensSR.git
+# HEART (Holographic-Electromyogram-Automated-Rehabilitation-Technology)
 
 ----------------------
 #### Update (06/20/2017)
